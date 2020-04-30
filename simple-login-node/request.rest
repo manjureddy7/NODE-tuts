@@ -1,0 +1,52 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/unsafeuser HTTP/1.1
+content-type: application/json
+
+{
+    name: "Manoj",
+    password: "password"
+}
+
+###
+
+POST http://localhost:3000/safeuser HTTP/1.1
+content-type: application/json
+
+{
+    name: "Manoj",
+    password: "password"
+}
+
+###
+
+POST http://localhost:3000/unsafeuser HTTP/1.1
+content-type: application/json
+
+{
+    "name": "unsafe name",
+    "password": "unsafe pass"
+}
+
+###
+
+
+POST http://localhost:3000/safeuser HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Manoj safe",
+    "password": "password safe"
+}
+
+###
+
+POST http://localhost:3000/user/login HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Manoj safe",
+    "password": "password safe"
+}

@@ -1,0 +1,39 @@
+JWT - JASON WEB TOKEN
+
+Used for -> AUTHORIZATION
+
+What happend before JWT's
+
+Client used to send sessionIds to server to check if the logged in user has
+permit to see that particular thing.
+
+Server saves that session ids somewhere and check the request session id coming
+from client everytime.
+
+BEFORE JWTs
+
+Client login (/login) -> Server stores the user in server memory
+
+then
+
+Sever sends SessionId (unique id) as cookie to ->  Client
+
+then
+
+For any future request
+
+Client send requests with SessionId as cookie to -> Server
+
+Now Server gets the user based on the session id sent by Client and veries 
+and send back response.
+
+PROBLEM WHAT JWTs TRYING TO SOLVE
+
+JWTs doesnt store anything in the SERVER at all.
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+GET http://localhost:3000 HTTP/1.1
+
+###
+GET http://localhost:3000/users HTTP/1.1
+
+
+###
+POST http://localhost:3000/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Manoj",
+    "password": "manoj",
+    "email": "manoj@gmail.com"
+}
